@@ -10,7 +10,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/projects'); // Adjust this URL to your API endpoint
+        const response = await fetch('https://gaurav-backend.vercel.app/api/projects'); // Adjust this URL to your API endpoint
         if (!response.ok) {
           throw new Error('Failed to fetch projects');
         }
